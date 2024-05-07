@@ -22,4 +22,38 @@ function App() { //Define um componente chamado APP
   );
 }
 
+function Formulario() {
+  return (
+    <form className="formulario">
+      <label htmlFor="texto">Texto:</label>
+      <input type="text" id="texto" required />
+      <label htmlFor="email">E-mail:</label>
+      <input type="email" id="email" required />
+      <button type="submit">Enviar</button>
+    </form>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+      <Formulario /> {/* Adiciona o formulário aqui */}
+    </div>
+  );
+}
+
 export default App; // Exporta o componente App como padrão
